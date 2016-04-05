@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="myApp">
+  <head>
+    <title>EZ Reader</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="http://www.dialed.com/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.dialed.com/main.css">
+
+  </head>
+  <body>
+  <div ng-controller="MyController">
+    <textarea class="signface" rows="4" cols="26" ng-model="textBlock" ng-change="updateCnt()" placeholder="TYPE SIGN TEXT HERE" wrap="off"></textarea>
+  
+    <div class="container">
+      <div class="letter-and-count" ng-repeat="x in textBack">
+        <div class="letter-box"> {{ x.letter }} </div>
+        <div class="count-box"> {{ x.count }} </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
