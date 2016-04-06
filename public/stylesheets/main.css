@@ -18,7 +18,8 @@
   }
   .container {
     /*background-color: PapayaWhip;*/
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    border: none;
     padding: 10px;
     margin: 0px 100px;
     min-width: 400px;
@@ -37,7 +38,8 @@
   }
   .on-hand-container {
     /*background-color: PapayaWhip;*/
-    border: 1px solid black;
+    /*border: 1px solid black;*/
+    border:none;
     padding: 10px;
     margin: 10px 100px;
     min-width: 400px;

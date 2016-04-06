@@ -1,6 +1,7 @@
 var app = angular.module('myApp', []);
 
 app.controller('MyController', function($scope) {
+  $scope.textBack =[];
   $scope.updateCnt = function() {
     var letUsed = {};
     var signText = $scope.textBlock.toUpperCase();
@@ -18,6 +19,11 @@ app.controller('MyController', function($scope) {
     $scope.textBack = ordered;
   }
   
+  // $scope.updateAvail = function() {
+  //   for (var i = 0; i < $scope.textBack.length; i++) {
+  //     $scope.letAvail[$scope.textBack[i].letter] = onhand[]
+  //   }
+  // };
     
 var onHand = [
 {letter : 'A', count: 12},
