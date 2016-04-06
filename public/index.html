@@ -2,6 +2,7 @@
 <html ng-app="myApp">
   <head>
     <title>EZ Reader</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Raleway:800' rel='stylesheet' type='text/css'> -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
     <script src="./javascripts/main.js"></script>
     <link rel="stylesheet" type="text/css" href="./stylesheets/main.css">
@@ -9,12 +10,18 @@
   </head>
   <body>
   <div ng-controller="MyController">
-    <textarea class="signface" rows="4" cols="26" ng-model="textBlock" ng-change="updateCnt()" placeholder="TYPE SIGN TEXT HERE" wrap="off"></textarea>
+    <textarea class="signface" rows="4" cols="23" ng-model="textBlock" ng-change="updateCnt()" placeholder="TYPE SIGN TEXT HERE" wrap="off"></textarea>
   
     <div class="container">
       <div class="letter-and-count" ng-repeat="x in textBack">
         <div class="letter-box"> {{ x.letter }} </div>
         <div class="count-box"> {{ x.count }} </div>
+      </div>
+    </div>
+    <div class="on-hand-container">
+      <div class="letter-and-count" ng-repeat="y in textOnHand">
+        <div class="letter-box"> {{ y.letter }} </div>
+        <div class="count-box"> {{ y.count }} </div>
       </div>
     </div>
   </div>
